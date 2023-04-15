@@ -17,6 +17,11 @@ public class Prenotazione_Runner implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("Run...");
 		prenotazione.FakePostazione();
+		test();
+	}
+	
+	public void test() {
+		System.out.println("cosacazzofai");
 	}
 	
 }

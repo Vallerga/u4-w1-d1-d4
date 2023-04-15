@@ -3,6 +3,7 @@ package com.prenotazione.configuration;
 import java.util.Locale;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
@@ -15,6 +16,7 @@ import com.prenotazione.model.Utente;
 
 @Configuration
 @PropertySource("classpath:application.properties")
+@ComponentScan
 public class Prenotazioni_Configuration {
 	
 	@Bean("postazionecrea")
