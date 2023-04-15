@@ -5,12 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.prenotazione.model.Edificio;
+import com.prenotazione.model.Postazione;
+import com.prenotazione.model.Utente;
 import com.prenotazione.repository.Edificio_Dao;
 import com.prenotazione.repository.Postazione_Dao;
 import com.prenotazione.repository.Utente_Dao;
-import com.prenotazioni.model.Edificio;
-import com.prenotazioni.model.Postazione;
-import com.prenotazioni.model.Utente;
 
 @Service
 public class Prenotazione_Service {

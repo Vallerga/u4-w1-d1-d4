@@ -1,15 +1,15 @@
-package com.prenotazioni.runner;
+package com.prenotazione.runner;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import com.prenotazione.model.Edificio;
+import com.prenotazione.model.Postazione;
+import com.prenotazione.model.Tipo;
+import com.prenotazione.model.Utente;
 import com.prenotazione.service.Prenotazione_Service;
-import com.prenotazioni.model.Edificio;
-import com.prenotazioni.model.Postazione;
-import com.prenotazioni.model.Tipo;
-import com.prenotazioni.model.Utente;
 
 //import com.jpac_project.service.UserService;
 

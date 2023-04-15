@@ -4,15 +4,17 @@ import java.util.Locale;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
 
 import com.github.javafaker.Faker;
-import com.prenotazioni.model.Edificio;
-import com.prenotazioni.model.Postazione;
-import com.prenotazioni.model.Tipo;
-import com.prenotazioni.model.Utente;
+import com.prenotazione.model.Edificio;
+import com.prenotazione.model.Postazione;
+import com.prenotazione.model.Tipo;
+import com.prenotazione.model.Utente;
 
 @Configuration
+@PropertySource("classpath:application.properties")
 public class Prenotazioni_Configuration {
 	
 	@Bean("postazionecrea")
