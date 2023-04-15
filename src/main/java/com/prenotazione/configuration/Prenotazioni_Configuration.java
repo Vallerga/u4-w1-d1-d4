@@ -14,7 +14,7 @@ import com.prenotazione.model.Tipo;
 import com.prenotazione.model.Utente;
 
 @Configuration
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application.p" + "roperties")
 public class Prenotazioni_Configuration {
 	
 	@Bean("postazionecrea")
