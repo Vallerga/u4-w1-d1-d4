@@ -34,19 +34,37 @@ public class Prenotazione_Service {
 
 	public void FakePostazione() {
 		insertPostazione(FakePostazione.getObject());
-		//insertUtente(FakeUtente.getObject());
-		//insertEdificio(FakeEdificio.getObject());
 	}
-	
+
+	public void creaEdificio() {
+		insertEdificio(FakeEdificio.getObject());
+	}
+
+	public void creaUtente() {
+		insertUtente(FakeUtente.getObject());
+	}
+
 	public void insertPostazione(Postazione p) {
 		postazione_dao.save(p);
-    }
-	
+	}
+
 	public void insertUtente(Utente u) {
 		utente_dao.save(u);
-    }
-	
+	}
+
 	public void insertEdificio(Edificio e) {
 		edificio_dao.save(e);
-    }
+	}
+
+//	public List<Prenotazione> getPrenotazioniByEdificio(Edificio edificio) {
+//	    List<Postazione> postazioni = edificio.getPostazioni(); // get all postazioni for the given edificio
+//	    List<Prenotazione> prenotazioni = new ArrayList<>();
+//
+//	    for (Postazione postazione : postazioni) {
+//	        prenotazioni.addAll(postazione.getPrenotazioni()); // add all prenotazioni for each postazione to the prenotazioni list
+//	    }
+//
+//	    return prenotazioni;
+//	}
+
 }

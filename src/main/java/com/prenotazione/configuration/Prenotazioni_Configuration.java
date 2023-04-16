@@ -34,8 +34,8 @@ public class Prenotazioni_Configuration {
 	
 	@Bean("utentecrea")
 	@Scope("prototype")
-	public Utente utentecrea(String cognome, String nome, String email, Postazione postazione) {
-		return new Utente(cognome, nome, email, postazione);
+	public Utente utentecrea(Long id, String cognome, String nome, String email, Postazione postazione) {
+		return new Utente(id, cognome, nome, email, postazione);
 	}
 	
 	@Bean("FakePostazione")
